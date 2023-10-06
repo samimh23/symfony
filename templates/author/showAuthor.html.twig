@@ -1,0 +1,21 @@
+<table border="1">
+    <tr>
+        <td>Id</td>
+        <td>email</td>
+        <td>username</td>
+        <td>picture</td>
+    </tr>
+
+    {% for author in tabAuthors %}
+        <tr>
+            <td>    {{ author.id }}
+            </td>
+            <td>    {{ author.email }}
+            </td>
+            <td>    {{ author.username }}
+            </td>
+            <td>    {{ author.picture }}
+            </td>
+        </tr>
+    {% endfor %}
+</table>
