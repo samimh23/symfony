@@ -1,0 +1,70 @@
+<style>
+    h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+    }
+    h5 {
+        color: #ff0000;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    table, th, td {
+        border: 1px solid #ccc;
+    }
+    th, td {
+        padding: 12px;
+        text-align: left;
+    }
+    th {
+        background-color: #333;
+        color: #fff;
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    a {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    img {
+        display: block;
+        margin: 40px auto;
+        border-radius: 70%;
+    }
+</style>
+<table align="center" border="1">
+    <tr>
+        <td>Ref</td>
+        <td>Title</td>
+        <th>Publication date</th>
+        <th>Published</th>
+        <th>Category</th>
+        <th>Author</th>
+
+    </tr>
+
+
+
+        <tr>
+            <td>{{ books.ref }}</td>
+            <td>{{ books.title }}</td>
+            <td>{{ books.publicationDate | date }}</td>
+            <td>{{ books.published }}</td>
+            <td>{{ books.category }}</td>
+            <td>{{ books.author.username }}</td>
+
+
+
+
+
+        </tr>
+
+</table>
